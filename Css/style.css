@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,7 +65,7 @@ button:hover{
 
 /* Off-screen */
 
-.off-screen-menu-a{
+.off-screen-menu-a.active{
     display: flex;
     height: 400px;
     margin-top: 70px;
@@ -74,12 +74,35 @@ button:hover{
     left: 150px;
     border-radius: 15px;
     flex-direction: column;
-    transition: .8s ease;
     background-color: hsl(234, 50%, 96%);
+    opacity: 0;
+    animation-name: off-screen-menu-a;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
-.off-screen-menu-a.active{
-    right: 0px;
+@keyframes off-screen-menu-a{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#thing{
+    opacity: 0;
+}
+
+#thing.active{
+    display: inline-block;
+    height: 400px;
+    animation-name: thing;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes thing{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .action{
@@ -185,4 +208,4 @@ input{
 .ham-menu span:nth-child(2){
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-}
+} 
