@@ -101,13 +101,58 @@ body{
 #thing{
     margin: 20px;
     height: 170px;
-    background-color: rgb(43, 220, 226);
 }
 
 #thing h1{
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 18px;
 }
+
+label{
+    font-size: 15px;
+}
+
+.same{
+    margin-bottom: 30px;
+}
+
+input{
+    margin-top: px;
+    height: 30px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.down{
+    display: flex;
+    /* height: 50px; */
+    /* opacity: 0; */
+    width: 40%;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.down > div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.down button{
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(216, 216, 216, 0.89);
+    color: rgb(44, 43, 43);
+    background-color: #bbbbcc;
+    padding: 8px 20px;
+}
+
+.down button:hover{
+    cursor: pointer;
+    color: rgb(207, 203, 203);
+    background-color: rgb(97, 97, 197);
+}
+
 /* 
 animation-name: off-screen-menu-a;
 animation-duration: 1s;
@@ -139,39 +184,11 @@ animation-fill-mode: forwards; */
     100% {opacity: 1;}
 } */
 
-/* .action{
-    margin: 0 20px;
-    width: 80%;
-} */
-
-/* .action h1{
-    margin-bottom: 20px;
-} */
-
-/* label{
-    font-size: 23px;
-} */
-
-/* .same{
-    margin-bottom: 30px;
-} */
-
 /* border: 1.5px solid rgb(71, 223, 147); */
 
-/* input{
-    margin-top: 10px;
-    height: 50px;
-    width: 117%;
-    font-size: 25px;
-} */
 
-/* .down{
-    display: flex;
-    height: 50px;
-    opacity: 0;
-    width: 55%;
-    margin: 0 20px;
-} */
+
+
 
 /* .down.active{
     cursor: pointer;
@@ -179,25 +196,7 @@ animation-fill-mode: forwards; */
     opacity: 100%;
 } */
 
-/* .down > div{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-} */
 
-/* .down button{
-    border-radius: 5px;
-    font-size: 20px;
-    color: rgba(105, 98, 98, 0.719);
-    background-color: rgba(216, 216, 216, 0.89);
-    padding: 15px 40px;
-} */
-
-/* .down button:hover{
-    cursor: pointer;
-    color: rgb(207, 203, 203);
-    background-color: rgb(97, 97, 197);
-} */
 
 /* Hamberger section */
 
