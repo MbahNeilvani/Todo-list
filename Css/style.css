@@ -57,7 +57,13 @@ body{
     background-color: #a2a2fd;
 }
 
-/* Off- screen */
+button:hover{
+    cursor: pointer;
+    color: rgb(207, 203, 203);
+    background-color: rgb(97, 97, 197);
+}
+
+/* Off-screen */
 
 .off-screen-menu-a{
     display: flex;
@@ -70,6 +76,10 @@ body{
     flex-direction: column;
     transition: .8s ease;
     background-color: hsl(234, 50%, 96%);
+}
+
+.off-screen-menu-a.active{
+    right: 0px;
 }
 
 .action{
@@ -128,28 +138,29 @@ input{
 
 #hamburger{
     display: flex;
-    padding: 20px;
+    padding: 5px;
     width: 10%;
-    background-color: rgb(133, 126, 126);
+    background-color: hsl(233, 31%, 94%);
+    justify-content: center;
     position: relative;
     bottom: 63px;
     z-index: 1;
-    left: 638px;
+    left: 636px;
     border-radius: 5px;
     transition: .8s ease;
 }
 
 .ham-menu{
-    height: 10px;
+    height: 15px;
+    padding: 20px;
     width: 40px;
-    margin-left: auto;
     position: relative;
 }
 
 .ham-menu span{
     height: 5px;
     width: 100%;
-    background-color: #fff;
+    background-color: rgb(153, 147, 147);
     border-radius: 15px;
     position: absolute;
     top: 50%;
@@ -162,20 +173,16 @@ input{
     top: 25%;
 }
 
-.ham-menu span:nth-child(3){
+.ham-menu span:nth-child(2){
     top: 75%;
 }
 
-.ham-menu.active span:nth-child(1){
+.ham-menu span:nth-child(1){
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.ham-menu.active span:nth-child(2){
-    opacity: 0;
-}
-
-.ham-menu.active span:nth-child(3){
+.ham-menu span:nth-child(2){
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
