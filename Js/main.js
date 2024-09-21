@@ -1,10 +1,16 @@
-const hamMenu = document.querySelector('.btn-a');
+const btn = document.querySelector('.btn-a');
+const hammenu = document.querySelector('.burger')
 const things = document.querySelector('#thing');
-const offScreenMenu = document.querySelector('.off-screen-menu-a');
+const offScreenMenu = document.querySelector('#off-screen-menu-a');
 
 
-hamMenu.addEventListener('click', () => {
-    hamMenu.classList.toggle('active');
+btn.addEventListener('click', () => {
+    btn.classList.toggle('active');
     offScreenMenu.classList.toggle('active'); 
-    things.classList.toggle('active')
-})  
+    things.classList.toggle('active');
+})
+
+hammenu.addEventListener('click', ()=> {
+    alert('working')
+    hammenu.classList.toggle('active')
+})
