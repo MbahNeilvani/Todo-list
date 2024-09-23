@@ -67,7 +67,7 @@ button:hover{
 
 #off-screen-menu-a.active{
     display: flex;
-    height: 400px;
+    height: 450px;
     margin-top: 70px;
     width: 70%;
     position: relative;
@@ -89,7 +89,15 @@ button:hover{
 
 #thing{
     opacity: 0;
-    height: 500px;
+    height: 400px;
+    pointer-events: none;
+    cursor: default;
+}
+
+#thing.active{
+    opacity: 100%;
+    pointer-events: all;
+    cursor: pointer;
 }
 
 .burger.active{
@@ -98,7 +106,7 @@ button:hover{
 
 #thing.active{
     display: inline-block;
-    height: 400px;
+    height: 320px;
     animation-name: thing;
     animation-duration: 1s;
     animation-delay: 1s;
@@ -140,13 +148,15 @@ input{
 }
 
 .down{
-    display: inline-block;
+    display: flex;
     height: 50px;
     width: 55%;
+    margin: 0 20px;
 }
 
 .down > div{
     display: flex;
+    width: 80%;
     justify-content: space-between;
 }
 

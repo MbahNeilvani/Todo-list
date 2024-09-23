@@ -1,5 +1,5 @@
 const btn = document.querySelector('.btn-a');
-const hammenu = document.querySelector('.burger')
+// const hammenu = document.querySelector('.burger')
 const things = document.querySelector('#thing');
 const offScreenMenu = document.querySelector('#off-screen-menu-a');
 
