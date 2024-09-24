@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,16 +18,34 @@
 
     <!-- Menu Section -->
 
-    <section id="menu">
-        <div id="box">
-            <div class='display'>
-                <div class="btn-a">
-                    <button>Add Task</button>
-                </div>
-                <div class="btn-b">
-                    <button>All</button>
+    <section id="option-bar">
+        <div class='display'>
+            <div class="btn-a">
+                <button>Add Task</button>
+            </div>
+            <div class="btn-b">
+                <button>
+                    All
+                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="right-list">
+        <div class="status">
+            <div class="container-b">
+                <div>
+                    <p>All</p>
+                    <p>Completed</p>
+                    <p>Incompleted</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div id="box">
             <div id="off-screen-menu-a">
                 <nav id="hamburger">
                     <div class="ham-menu">
@@ -47,15 +66,6 @@
                         <button>Add Task</button>
                         <button>Cancel</button>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="status">
-            <div class="container-b">
-                <div>
-                    <p>All</p>
-                    <p>Completed</p>
-                    <p>Incompleted</p>
                 </div>
             </div>
         </div>

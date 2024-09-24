@@ -1,4 +1,4 @@
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,62 +10,90 @@
 }
 
 body{
+    background-color: aquamarine;
     margin: 90px auto;
     width: 50%;
 }
 
 #title{
-    display: inline-block;
-    height: 70px;
-    position: relative;
-    left: 35%;
-    font-size: 50px;
+    display: flex;
+    margin-bottom: 30px;
+    width:100%;
+    justify-content: center;
+    height: 30px;
+    font-size: 30px;
     font-weight: bold;
     color: hsl(236, 13%, 42%);
 }
 
-#menu{
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    color: hsl(236, 13%, 42%);
+#option-bar{
+    height: 35px;
 }
 
 .display{
     display: flex;
-    height: 70px;
     justify-content: space-between;
-    align-items: center;
 }
 
-
-
 .btn-a button{
+    display: flex;
+    margin: 0;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #fff;
+    color: rgb(44, 43, 43);
+    background-color: #bbbbcc;
+    padding: 10px 30px;
+}
+
+.btn-b button{
+    display: flex;
+    margin: 0;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #fff;
+    color: rgb(44, 43, 43);
+    background-color: #bbbbcc;
+    padding: 10px 8px;
+}
+
+.btn-b i{
+    padding-left: 50px;
+}
+
+.display button:hover{
+    cursor: pointer;
+    color: rgb(207, 203, 203);
+    background-color: rgb(97, 97, 197);
+}
+
+/* #menu{
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    color: hsl(236, 13%, 42%);
+} */
+
+/* .btn-a button{
     border-radius: 11px;
     font-size: 23px;
     padding: 10px 40px;
     color: #fff;
     background-color: #a2a2fd;
 
-}
+} */
 
-.btn-b button{
+/* .btn-b button{
     font-size: 23px;
     padding: 10px 50px;
     border-radius: 11px;
     color: #fff;
     background-color: #a2a2fd;
-}
-
-button:hover{
-    cursor: pointer;
-    color: rgb(207, 203, 203);
-    background-color: rgb(97, 97, 197);
-}
+} */
 
 /* Off-screen */
 
-#off-screen-menu-a.active{
+/* #off-screen-menu-a.active{
     display: flex;
     height: 450px;
     margin-top: 70px;
@@ -80,105 +108,97 @@ button:hover{
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-}
+} */
 
-@keyframes off-screen-menu-a{
+/* @keyframes off-screen-menu-a{
     0% {opacity: 0;}
     100% {opacity: 1;}
-}
+} */
 
-#thing{
-    opacity: 0;
-    height: 400px;
-    pointer-events: none;
-    cursor: default;
-}
-
-#thing.active{
+/* #thing.active{
     opacity: 100%;
-    pointer-events: all;
+    pointer-events: none;
     cursor: pointer;
-}
+} */
 
-.burger.active{
-    opacity: 0;
-}
-
-#thing.active{
+/* #thing.active{
     display: inline-block;
     height: 320px;
     animation-name: thing;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-}
+} */
 
-@keyframes thing{
+/* @keyframes thing{
     0% {opacity: 0;}
     100% {opacity: 1;}
-}
+} */
 
-.action{
+/* .action{
     margin: 0 20px;
     width: 80%;
-}
+} */
 
-.action h1{
+/* .action h1{
     margin-bottom: 20px;
-}
+} */
 
-label{
+/* label{
     font-size: 23px;
-}
+} */
 
-.same{
+/* .same{
     margin-bottom: 30px;
-}
-
-
-
+} */
 
 /* border: 1.5px solid rgb(71, 223, 147); */
 
-input{
+/* input{
     margin-top: 10px;
     height: 50px;
     width: 117%;
     font-size: 25px;
-}
+} */
 
-.down{
+/* .down{
     display: flex;
     height: 50px;
+    opacity: 0;
     width: 55%;
     margin: 0 20px;
-}
+} */
 
-.down > div{
+/* .down.active{
+    cursor: pointer;
+    pointer-events: visible;
+    opacity: 100%;
+} */
+
+/* .down > div{
     display: flex;
     width: 80%;
     justify-content: space-between;
-}
+} */
 
-.down button{
+/* .down button{
     border-radius: 5px;
     font-size: 20px;
     color: rgba(105, 98, 98, 0.719);
     background-color: rgba(216, 216, 216, 0.89);
     padding: 15px 40px;
-}
+} */
 
-.down button:hover{
+/* .down button:hover{
     cursor: pointer;
     color: rgb(207, 203, 203);
     background-color: rgb(97, 97, 197);
-}
+} */
 
 /* Hamberger section */
 
-#hamburger{
+/* #hamburger{
     display: flex;
-    /* padding: 5px; */
     width: 7%;
     background-color: hsl(233, 31%, 94%);
     justify-content: center;
@@ -229,4 +249,4 @@ input{
 .ham-menu span:nth-child(2){
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-} 
+} */
