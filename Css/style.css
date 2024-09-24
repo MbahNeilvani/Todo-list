@@ -67,48 +67,52 @@ body{
     background-color: rgb(97, 97, 197);
 }
 
-/* #menu{
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    color: hsl(236, 13%, 42%);
-} */
-
-/* .btn-a button{
-    border-radius: 11px;
-    font-size: 23px;
-    padding: 10px 40px;
-    color: #fff;
-    background-color: #a2a2fd;
-
-} */
-
-/* .btn-b button{
-    font-size: 23px;
-    padding: 10px 50px;
-    border-radius: 11px;
-    color: #fff;
-    background-color: #a2a2fd;
-} */
-
-/* Off-screen */
-
-/* #off-screen-menu-a.active{
+#menu{
     display: flex;
-    height: 450px;
-    margin-top: 70px;
-    width: 70%;
-    position: relative;
-    left: 150px;
-    border-radius: 15px;
-    flex-direction: column;
-    background-color: hsl(234, 50%, 96%);
-    opacity: 0;
-    animation-name: off-screen-menu-a;
+    margin: 0 auto;
+    width: 80%;
+    /* opacity: 0; */
+    height: 250px;
+    border-radius: 8px;
+    color: hsl(236, 13%, 42%);
+    animation-name: menu;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-} */
+    background-color: hsl(234, 50%, 96%);
+}
+
+/* Off-screen */
+
+#box{
+    margin: 0;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+#off-screen-menu-a{
+    display: flex;
+    margin: 0 auto;
+    height: 250px;
+    flex-direction: column;
+    
+}
+
+#thing{
+    margin: 20px;
+    height: 170px;
+    background-color: rgb(43, 220, 226);
+}
+
+#thing h1{
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+/* 
+animation-name: off-screen-menu-a;
+animation-duration: 1s;
+animation-delay: 1s;
+animation-fill-mode: forwards; */
 
 /* @keyframes off-screen-menu-a{
     0% {opacity: 0;}
