@@ -67,11 +67,12 @@ body{
     background-color: rgb(97, 97, 197);
 }
 
-#menu{
+#menu.active{
     display: flex;
     margin: 0 auto;
     width: 80%;
-    /* opacity: 0; */
+    z-index: 1;
+    opacity: 0;
     height: 250px;
     border-radius: 8px;
     color: hsl(236, 13%, 42%);
@@ -82,26 +83,63 @@ body{
     background-color: hsl(234, 50%, 96%);
 }
 
+@keyframes menu{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 /* Off-screen */
 
 #box{
     margin: 0;
     width: 100%;
-    /* background-color: blueviolet; */
+    /* opacity: 0; */
 }
 
 #off-screen-menu-a{
+    opacity: 0;
+    cursor: default;
+    pointer-events: none;
+}
+
+#off-screen-menu-a.active{
     display: flex;
     margin: 0 auto;
     height: 250px;
+    opacity: 0;
+    cursor: default;
+    pointer-events: auto;
+    animation-name: off-screen-menu-a;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
     flex-direction: column;
-    
+}
+
+@keyframes off-screen-menu-a{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 #thing{
     margin: 20px;
     height: 170px;
 }
+
+/* #thing.active{
+    opacity: 100%;
+    pointer-events: none;
+    cursor: pointer;
+} */
+
+/* #thing.active{
+    display: inline-block;
+    height: 320px;
+    animation-name: thing;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+} */
 
 #thing h1{
     font-size: 18px;
@@ -113,20 +151,23 @@ label{
 }
 
 .same{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 input{
-    margin-top: px;
+    margin-top: 3px;
+    padding: 10px 15px;
     height: 30px;
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
 }
+
+input[type=text]:focus {
+    border: 1px solid rgb(159, 212, 247);
+  }
 
 .down{
     display: flex;
-    /* height: 50px; */
-    /* opacity: 0; */
     width: 40%;
     align-items: center;
     margin: 0 20px;
@@ -159,44 +200,13 @@ animation-duration: 1s;
 animation-delay: 1s;
 animation-fill-mode: forwards; */
 
-/* @keyframes off-screen-menu-a{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-} */
-
-/* #thing.active{
-    opacity: 100%;
-    pointer-events: none;
-    cursor: pointer;
-} */
-
-/* #thing.active{
-    display: inline-block;
-    height: 320px;
-    animation-name: thing;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-} */
-
-/* @keyframes thing{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-} */
-
 /* border: 1.5px solid rgb(71, 223, 147); */
-
-
-
-
 
 /* .down.active{
     cursor: pointer;
     pointer-events: visible;
     opacity: 100%;
 } */
-
-
 
 /* Hamberger section */
 
