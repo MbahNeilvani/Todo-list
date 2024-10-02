@@ -105,7 +105,7 @@ body{
     margin: 0 auto;
     height: 250px;
     opacity: 0;
-    z-index: 1;
+    /* z-index: 1; */
     cursor: default;
     pointer-events: auto;
     animation-name: off-screen-menu-a;
@@ -293,4 +293,66 @@ input[type=text]:focus {
     padding: 0 26px;
     background-color: gray;
     border-radius: 5px;
+}
+
+/* #main{
+    margin: 0 auto;
+    height: 250px;
+    top: 37%;
+    width: 50%;
+    z-index: -1;
+    padding: 0;
+    border-radius: 9px;
+    position: absolute;
+    background-color: blue;
+} */
+
+/* .container{
+    margin: 20px;
+    height: 210px;
+    background-color: coral;
+} */
+
+.container{
+    margin: 0 auto;
+    border-radius: 9px;
+    padding: 20px;
+    height: 200px;
+    overflow: auto;
+    position: absolute;
+    top: 35%;
+    width: 50%;
+    /* z-index: -1; */
+    background-color: #f1efefcc;
+}
+
+form{
+    display: flex;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+form div{
+    display: flex;
+    align-items: center;
+}
+
+form div > div{
+    padding: 0 5px;
+}
+
+#project{
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 83%;
+}
+
+label input{
+    width: 20px;
+}
+
+#changes{
+    display: flex;
+    justify-content: space-between;
 }
