@@ -22,16 +22,32 @@ btnB.addEventListener('click', () =>{
     status.classList.toggle('active')
 })
 
-document.querySelector('#project').innerText = localStorage.getItem('message')
+// LOCALSTORAGE
+document.querySelector('.add').addEventListener('click', put)
+document.querySelector('#software').innerText = localStorage.getItem('learned')
 
-if (!localStorage.getItem('message')){
-    localStorage.getItem('message', 0)
+if (!localStorage.getItem('learned')){
+    localStorage.getItem('learned', 0)
 }
 
-document.querySelector('button').addEventListener('click', addAnotherOne)
-
-function addAnotherOne(){
-   let botScoreVal = Number(localStorage.getItem('botScore') )
-   botScoreVal += 1
-   localStorage.setItem('botScore', botScoreVal)
+function put(){
+    let write = document.querySelector('.same').value
+    // write += " "
+    localStorage.setItem('learned', write)
+    document.querySelector('#software').innerText = localStorage.getItem('learned')
 }
+
+
+
+
+
+
+
+// document.querySelector('button').addEventListener('click', addAnotherOne)
+
+// function addAnotherOne(){
+//    let botScoreVal = Number(localStorage.getItem('botScore') )
+//    botScoreVal += 1
+//    localStorage.setItem('botScore', botScoreVal)
+// }
+

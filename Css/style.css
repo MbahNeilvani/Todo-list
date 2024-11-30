@@ -59,19 +59,26 @@ form div > div{
     padding: 0 5px;
 }
 
-#project{
+/* #project{
     padding: 10px 10px;
     border-radius: 5px;
     width: 83%;
-}
+} */
 
 label input{
     width: 20px;
 }
 
+#software{
+    margin-left: 10px;
+}
+
 #changes{
     display: flex;
-    justify-content: space-between;
+}
+
+.icons{
+    margin-left: auto;
 }
 
 /* MENU OPTION-BAR */
@@ -138,6 +145,10 @@ label input{
 @keyframes menu{
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+#software{
+    width: 100%;
 }
 
 /* OFF-SCREEN */
